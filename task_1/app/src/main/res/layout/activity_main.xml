@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/time_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY FIRST HOMETASK"
+        android:textAlignment="center"
+        android:textColor="#3e282a"
+        android:textSize="25pt" />
+
+    <Button
+        android:id="@+id/buttonBattery"
+        android:layout_width="75pt"
+        android:layout_height="20pt"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="25pt"
+        android:background="#3e282a"
+        android:text="Battery"
+        android:textColor="#ffffff"
+        android:textSize="10pt"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="75pt"
+        android:layout_height="20pt"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="3pt"
+        android:background="#3e282a"
+        android:text="Location"
+        android:textColor="#ffffff"
+        android:textSize="10pt"
+        android:textAlignment="center"/>
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:padding="60pt"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battery" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery status"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25pt" />
+
+    <TextView
+        android:id="@+id/batteryStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="15pt"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20pt"/>
+
+    <TextView
+        android:id="@+id/chargingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="5pt"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="10pt"/>
+
+
+</FrameLayout>
