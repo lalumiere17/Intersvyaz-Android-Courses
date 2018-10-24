@@ -24,8 +24,13 @@ public class BatteryActivity extends AppCompatActivity{
         TextView textPercent = (TextView) findViewById(R.id.batteryStatus);
         int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
         boolean isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING;
-        if (isCharging == true) {
+        if (isCharging == true)
+        {
             textCharging.setText("Charging");
+        }
+        else
+        {
+            textCharging.setText("Not charging");
         }
         int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
         int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
