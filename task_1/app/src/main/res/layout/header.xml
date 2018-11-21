@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#200041">
+    <!--android:background="#200041"-->
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5pt"
+        android:gravity="center|right"
+        android:text="HEADER"
+        android:textSize="12pt"
+        android:textColor="@color/colorTextHeader"
+        android:textStyle="normal"
+        />
+
+</LinearLayout>

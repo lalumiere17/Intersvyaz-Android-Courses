@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "First Application";
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -34,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonLocation = findViewById(R.id.buttonLocation);
         buttonLocation.setOnClickListener(buttonLocationListener);
+
+        Button buttonAPI = findViewById(R.id.buttonAPI);
+        buttonAPI.setOnClickListener(buttonAPIListener);
     }
 
     View.OnClickListener buttonBatteryListener = new View.OnClickListener() {
@@ -48,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this, LocationActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    View.OnClickListener buttonAPIListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this, APIActivity.class);
             startActivity(intent);
         }
     };

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <include
+        android:id="@+id/head"
+        android:layout_height="20pt"
+        android:layout_width="match_parent"
+        layout="@layout/header"
+
+    />
+
+    <LinearLayout
+        android:id="@+id/lineSearch"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:layout_margin="2pt"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/enter_text"
+            android:layout_width="match_parent"
+            android:layout_height="17pt"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:alpha="0.7"
+            android:background="#ffffff"
+            android:hint="Enter text"
+            android:padding="3pt"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_margin="4pt"
+            android:padding="2pt"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_search"
+            android:scaleType="centerCrop"
+            android:background="#ffffff"
+            android:alpha="0.7"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineSearch"/>
+
+</android.support.constraint.ConstraintLayout>
